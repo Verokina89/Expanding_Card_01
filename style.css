@@ -105,14 +105,10 @@ body {
     background-image: url("./assets/img/Montaña.jpg");
 }
 
-footer p{
+footer {
+    color:rgb(239, 239, 213);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
     font-size: 12px;
-    margin-left: 10px;
-    color:rgb(224, 224, 178)
-}
-
-footer span{
-    font-size: 8px;
-    margin-left: 10px;
-    color:rgb(224, 224, 178)
 }
