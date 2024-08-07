@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             removeActiveClass();
             card.classList.add('active');
+            card.classList.remove('small');
         });
     
     });
@@ -12,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function removeActiveClass() {
         cards.forEach(card => {
             card.classList.remove('active')
+            card.classList.add('small')
         })
     }
 })
+
 
 
 /*-------Condicionales --------*/

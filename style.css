@@ -49,6 +49,9 @@ table {
 body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 } 
 
 .principalContent {
@@ -72,7 +75,7 @@ body {
     height: 90vh;
     cursor: pointer;
     transition: all 300ms ease-in;    
-    flex: 3;
+    flex: 1;
 }
 
 .imgCard h2 {
@@ -80,13 +83,30 @@ body {
     font-size: 10px;
     padding: 20px;
     position: absolute;
+    
 } 
 
 .active {
     display: flex;
     justify-content: flex-start;
-    background-image: url("./assets/img/puente.jpg");
     flex: 20;
+}
+
+.small {
+    display: flex;
+    justify-content: flex-start;
+    flex: 2; 
+}
+
+.small h2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-out 0.4s;
+}
+
+.one {
+    background-image: url("./assets/img/puente.jpg");
+    display: flex;
+    justify-content: flex-start;
 }
 
 .two {
@@ -109,6 +129,17 @@ footer {
     color:rgb(239, 239, 213);
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
     font-size: 12px;
+    width: 100%;
+    margin: 0 20px 10px 0;
+    /* margin-bottom: 5px; */
+}
+
+
+@media (max-width: 480px) {
+    .principalContent{
+        width: 80vw;
+        flex: 0.5;
+    }
+
 }
